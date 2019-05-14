@@ -1,3 +1,3 @@
 #!/bin/sh
 
-CompileXcodeProject project=PROJECT_NAME target=TARGET_NAME workspace="$(printf "%q\n" "$(pwd)")/WORKSPACE_NAME.xcworkspace" buildDir="$(printf "%q\n" "$(pwd)")/build"
+CompileXcodeProject project=$PROJECT_NAME scheme=$SCHEME_NAME target=$TARGET_NAME workspace="$(printf "%q\n" "$(pwd)")/$WORKSPACE_NAME.xcworkspace" buildDir="$(printf "%q\n" "$(pwd)")/build"
